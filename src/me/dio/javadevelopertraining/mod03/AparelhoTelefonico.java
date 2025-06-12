@@ -1,0 +1,7 @@
+package me.dio.javadevelopertraining.mod03;
+
+public interface AparelhoTelefonico {
+    void ligar(String numero);
+    void atender();
+    void iniciarCorreioVoz();
+}

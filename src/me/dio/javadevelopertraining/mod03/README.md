@@ -71,4 +71,48 @@ classDiagram
 
 ```bash
 https://github.com/glysns/trilha-java-basico/desafios/poo/README.md
-```` 
+```
+
+---
+
+## Conceitos de Orientação a Objetos (POO)
+
+A Programação Orientada a Objetos possui quatro pilares principais:
+
+### 1. Encapsulamento
+
+É o princípio de esconder os detalhes internos de implementação de uma classe, expondo apenas o necessário por meio de métodos públicos. Isso protege os dados e facilita a manutenção.
+
+**Exemplo:**
+No código Java, os métodos `tocar()`, `pausar()` e `selecionarMusica(String musica)` são expostos pela interface `ReprodutorMusical`, mas a implementação interna está encapsulada na classe `iPhone`.
+
+### 2. Herança
+
+Permite que uma classe herde características (métodos e atributos) de outra. Em Java, isso é feito usando `extends` (para classes) ou `implements` (para interfaces).
+
+**Exemplo:**
+A classe `iPhone` implementa as interfaces `ReprodutorMusical`, `AparelhoTelefonico` e `NavegadorInternet`, herdando seus métodos.
+
+### 3. Abstração
+
+Consiste em expor apenas os comportamentos essenciais de um objeto, ocultando detalhes complexos. Interfaces e classes abstratas são exemplos de abstração.
+
+**Exemplo:**
+As interfaces `ReprodutorMusical`, `AparelhoTelefonico` e `NavegadorInternet` representam abstrações de funcionalidades do iPhone.
+
+### 4. Polimorfismo
+
+Permite que um mesmo método tenha comportamentos diferentes dependendo do objeto que o implementa. Pode ser de sobreposição (override) ou sobrecarga (overload).
+
+**Exemplo:**
+A classe `iPhone` implementa os métodos das interfaces, podendo ser usada como qualquer um dos tipos:
+
+```java
+ReprodutorMusical player = new iPhone();
+player.tocar();
+
+AparelhoTelefonico telefone = new iPhone();
+telefone.ligar("123456");
+```
+
+Assim, o mesmo objeto pode assumir diferentes formas conforme o contexto.
