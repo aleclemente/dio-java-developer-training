@@ -1,4 +1,4 @@
-package me.dio.javadevelopertraining.mod03;
+package me.dio.javadevelopertraining.mod03.iPhone;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package me.dio.javadevelopertraining.mod03;
+package me.dio.javadevelopertraining.mod03.iPhone;
 
 public interface NavegadorInternet {
     void exibirPagina(String url);

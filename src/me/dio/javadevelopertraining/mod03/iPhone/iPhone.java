@@ -1,4 +1,4 @@
-package me.dio.javadevelopertraining.mod03;
+package me.dio.javadevelopertraining.mod03.iPhone;
 
 public class iPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
     // ReprodutorMusical
