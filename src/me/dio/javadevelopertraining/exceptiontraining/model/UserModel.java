@@ -1,18 +1,20 @@
 package me.dio.javadevelopertraining.exceptiontraining.model;
 
+import java.time.LocalDate;
 import java.time.OffsetDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
 public class UserModel {
     private long id;
     private String name;
     private String email;
-    private OffsetDateTime birthDate;
+    private LocalDate birthDate;
 
     public UserModel() {
     }
 
-    public UserModel(long id, String name, String email, OffsetDateTime birthDate) {
+    public UserModel(long id, String name, String email, LocalDate birthDate) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -31,7 +33,7 @@ public class UserModel {
         return email;
     }
 
-    public OffsetDateTime getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
@@ -47,7 +49,7 @@ public class UserModel {
         this.email = email;
     }
 
-    public void setBirthDate(OffsetDateTime birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
 
@@ -68,11 +70,14 @@ public class UserModel {
 
     @Override
     public String toString() {
+
+        var formattedBirthDate = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
         return "{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", birthDate=" + birthDate +
+                ", birthDate=" + birthDate.format(formattedBirthDate) +
                 '}';
     }
 }

@@ -1,5 +1,6 @@
 package me.dio.javadevelopertraining.exceptiontraining.dao;
 
+import me.dio.javadevelopertraining.exceptiontraining.exception.NoUserException;
 import me.dio.javadevelopertraining.exceptiontraining.exception.UserNotFoundException;
 import me.dio.javadevelopertraining.exceptiontraining.model.UserModel;
 
@@ -40,6 +41,7 @@ public class UserDAO {
     }
 
     public List<UserModel> findAll() {
+
         return models;
     }
 }
