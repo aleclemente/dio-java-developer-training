@@ -1,4 +1,4 @@
-package me.dio.javadevelopertraining.chalenge;
+package me.dio.javadevelopertraining.chalenges;
 
 import java.util.ArrayList;
 import java.util.Collections;

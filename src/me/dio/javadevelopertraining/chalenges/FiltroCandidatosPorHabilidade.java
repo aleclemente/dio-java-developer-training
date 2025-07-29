@@ -1,11 +1,7 @@
-package me.dio.javadevelopertraining.chalenge;
+package me.dio.javadevelopertraining.chalenges;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 

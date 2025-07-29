@@ -84,3 +84,69 @@ Validar Codigos - 1
 Enviar Emails - 2
 Almoco - 3
 Exercicios - 4
+
+---
+
+# Desafio 05: simulacao de Endpoint GET
+
+## Descrição
+Simule um endpoint que recebe uma lista de nomes e retorna a lista ordenada alfabeticamente, formatada como um array JSON simples.
+
+## Entrada
+
+Uma linha com nomes separados por espaço.
+
+    Uma linha contendo nomes separados por espaço.
+
+## Saída
+
+Os nomes ordenados alfabeticamente, formatados como uma lista JSON, ou seja, entre colchetes [] e cada nome entre aspas duplas, separados por vírgulas e espaços.
+
+## Exemplo
+A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
+
+**Entrada 1**
+Carlos Ana Beatriz
+
+**Saída 1**
+["Ana", "Beatriz", "Carlos"]
+
+
+**Entrada 2**
+Maria Joao Pedro
+
+**Saída 2**
+["Joao", "Maria", "Pedro"]
+
+---
+
+# Desafio 06: Contagem de Requisições por Endpoint
+
+## Descrição
+Receba uma lista de strings representando endpoints acessados e retorne o endpoint mais acessado. Se houver empate, retorne o que apareceu primeiro na lista.
+
+## Entrada
+
+Uma linha com nomes de endpoints separados por espaço.
+
+    Uma linha contendo os nomes dos endpoints separados por espaço.
+
+## Saída
+
+O nome do endpoint mais acessado.
+
+## Exemplo
+A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
+
+**Entrada 1**
+/login /home /login /profile
+
+**Saída 1**
+/login
+
+
+**Entrada 2**
+/api /api /home /api
+
+**Saída 2**
+/api
